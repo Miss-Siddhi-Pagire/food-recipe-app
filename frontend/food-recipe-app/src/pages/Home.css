@@ -1,0 +1,152 @@
+/* Keep the original section styling */
+section {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Keep the original flex layout for the home section */
+.home {
+  display: flex;
+  margin-top: 6rem;
+  gap: 3rem;
+  position: relative;
+  
+}
+
+/* Original button styling with a small fix for responsiveness */
+.home button {
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  width: 200px;  /* Keep the original width */
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #213547;
+  cursor: pointer;
+  position: relative;
+  margin-top: 22px; 
+  z-index: 10;  /* Ensure the button is above other elements */
+}
+
+.home-para{
+  margin-top: 10px;
+  line-height: 24px;
+}
+.bg svg {
+  position: absolute;
+  bottom: 0;
+}
+.home .right img {
+  width: 400px;
+  height: 300px;
+}
+
+
+@media (min-width: 1024px) {
+ 
+  .home button {
+    width: 250px; 
+  }
+  
+  .home .right img {
+    width: 30vw;  
+    height: auto; 
+  }
+}
+
+@media (max-width:320px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    position: relative;
+  }
+  
+  .home-para{
+    max-width: 100%;
+    font-weight:bold;
+  }
+  .bg svg {
+    
+    display: none;
+  
+  }
+  .welcome{
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+  .home .right img {
+    width: 250px;
+    height: 200px;
+  }
+  .left{
+    width: 270px
+  }
+  
+
+}
+
+@media (min-width:321px) and (max-width:480px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    position: relative;
+  }
+  
+  .bg svg {
+    
+    display: none;
+  
+  }
+  .welcome{
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+  .home .right img {
+    width: 410px;
+    height: 250px;
+  }
+  .left{
+    width: 420px
+  }
+  
+}
+
+@media (min-width:481px) and (max-width:768px) {
+.left{
+  max-width;: 420px;
+  min-width: 768;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  position: relative;
+}
+.home .right img {
+  width: 680px;
+  height: 400px;
+}
+.bg svg {
+    
+  display: none;
+
+}
+
+
+  
+  
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .welcome{
+    font-size: 40px;
+  }
+}
+
+

@@ -1,0 +1,138 @@
+/* General styles for the footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    width: 1330px;
+    margin-top: 20px;
+  }
+  
+  /* Container to hold all elements of the footer */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Footer logo styles */
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  /* Styling the links section */
+  .footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #f1c40f; /* Highlight on hover */
+  }
+  
+  /* Footer social icons styles */
+  .footer-social {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-social-icon img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-social-icon img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Footer bottom text styling */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width:320px){
+    .footer{
+      width: 308px;
+    }
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-links{
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width:480px) {
+    .footer{
+      min-width: 320px;
+      max-width: 480px;
+    }
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-links{
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    
+  }
+  
+  @media (min-width:481px) and (max-width:768px) {
+    .footer{
+      min-width: 481px;
+      max-width: 768px;
+      padding: 20px;
+    }
+    .footer-links{
+      text-align: center;
+    }  
+    .footer-bottom{
+      text-align: center;
+    }
+     
+  }
+  
+  @media (min-width:769px) and (max-width:1024px) {
+    .footer{
+      min-width: 769px;
+      max-width: 1024px;
+      padding: 20px;
+    }
+    .footer-links{
+      text-align: center;
+    }
+    .footer-bottom{
+      text-align: center;
+    }
+    
+    
+    
+  }
+  

@@ -1,0 +1,115 @@
+/* General Navbar Styling */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header .logo h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007BFF;
+}
+
+header nav ul li .login {
+  font-size: 16px;
+  font-weight: 500;
+  color: #007BFF;
+}
+
+header nav ul li .login:hover {
+  color: #0056b3;
+}
+
+/* Logo Alignment */
+header .logo {
+  flex: 1;
+}
+
+header nav {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.login{
+  cursor: pointer;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+  
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  header nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

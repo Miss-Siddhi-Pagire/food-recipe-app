@@ -1,0 +1,128 @@
+.card-container{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, 13rem);
+  cursor: pointer;
+}
+  
+  .card{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .card-body{
+    background-color: #d4f6e8;
+    padding: 1rem;
+  }
+  
+  .card-body .title{
+    margin-bottom:5px;
+    font-size: 15px;
+    font-weight:500;
+  }
+  
+  .card-body .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-body .timer{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .action{
+    display: flex;
+    font-size: 19px;
+    justify-content: space-between;
+    align-items: center;
+    width: 45px;
+  }
+  
+  .editIcon{
+    color: black;
+    font-size: 18px;
+  }
+  
+  .action a:hover{
+    color: black;
+  }
+  
+  .deleteIcon{
+    color: rgb(239,53,53);
+    font-size: 20px;
+    cursor: pointer;
+  }
+.flavorful-fest{
+    text-align: center;
+    margin-bottom: 20px;
+}  
+.explore{
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  height: 35px;
+  width: 100px;  /* Keep the original width */
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #213547;
+  cursor: pointer;
+  position: relative;
+  margin-top: 15px; 
+ 
+}
+/* Medium screen (tablet, 768px and above) */
+
+@media (max-width:320px){
+  .flavorful-fest{
+    font-size: 21px;
+    text-align: left;
+    margin-left: 3.5rem;
+    margin-top: 140px;
+  }
+}
+@media (min-width:321px) and (max-width:480px) {
+  .flavorful-fest{
+    margin-top: 40px;
+    }
+    .card-container{
+      grid-template-columns: repeat(auto-fit, 10rem);
+      display: grid;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .card-container{
+    grid-template-columns: repeat(auto-fit, 17rem);
+    display: grid;
+  }
+  .flavorful-fest{
+    
+    margin-top: 200px;
+    }
+  
+  
+  
+  
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .card-container{
+    grid-template-columns: repeat(auto-fit, 15rem);
+    display: grid;
+  }
+  .flavorful-fest{
+    margin-right: 230px;
+    }
+  
+  
+}
