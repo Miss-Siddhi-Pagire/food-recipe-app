@@ -6,7 +6,7 @@ import MainNavigation from './components/MainNavigation'
 import axios from 'axios'
 import AddFoodRecipe from './pages/AddFoodRecipe'
 import EditRecipe from './pages/EditRecipe'
-import RecipeItems from './components/RecipeItems' // Import RecipeItems
+import RecipeItems from './components/RecipeItems' 
 import RecipeView from './pages/RecipeView'
 
 

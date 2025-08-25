@@ -48,7 +48,7 @@ export default function Navbar() {
             <li onClick={() => isLogin && setIsOpen(true)}><NavLink to={!isLogin ?  "/myRecipe" : "/"}>My Recipe</NavLink></li>
             <li onClick={() => isLogin && setIsOpen(true)}><NavLink to={!isLogin ? "/favRecipe" : "/"}>My Favourites</NavLink></li>
             <li onClick={checkLogin}>
-              <p className="login">{isLogin ? "Login" : `Logout (${user?.email.slice(0, 5) || ""})`}</p>
+              <p className="login">{isLogin ? "Login" : `Logout (${user?.email?.slice(0, 5) || "Guest"})`}</p>
             </li>
           </ul>
           <div className="hamburger" onClick={toggleHamburger}>

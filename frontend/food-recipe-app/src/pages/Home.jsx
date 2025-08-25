@@ -27,8 +27,6 @@ export default function Home() {
         <div className='left'>
               
           <h1 className='welcome'>Welcome to DishDelight</h1>
-    
-
           <h5 className='home-para'>
             Your culinary adventure begins here! Discover a world of recipes. Share your own cooking creations with a community of food lovers, and get inspired by others’ flavorful ideas. Whether you're a seasoned chef or just starting out, you'll find something to suit your taste and skill. Join a vibrant network where creativity and flavor come together to make every dish a delight. Explore new recipes, enhance your cooking, and connect with food enthusiasts from around the world. Let’s cook, share, and enjoy together!"
           </h5>
