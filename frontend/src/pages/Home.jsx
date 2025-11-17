@@ -3,7 +3,7 @@ import foodRecipe from '../assets/foodRecipe.jpg'
 import RecipeItems from '../components/RecipeItems'
 import { useNavigate } from 'react-router-dom'
 import Modal from '../components/Modal'
-import InputForm from '../components/inputForm'
+import InputForm from '../components/InputForm'
 import './Home.css'
 
 export default function Home() {
