@@ -71,7 +71,7 @@ export default function RecipeItems() {
         {
           filteredRecipes?.map((item, index) => (
             <div key={index} className='card'>
-              <img src={`http://localhost:5000/images/${item.coverImage}`} width="120px" height="100px" alt="Recipe" />
+              <img src={`https://food-recipe-app-backend-c1mo.onrender.com/images/${item.coverImage}`} width="120px" height="100px" alt="Recipe" />
               <div className='card-body'>
                 <div className='title'>{item.title}</div>
                 <div className='icons'>
