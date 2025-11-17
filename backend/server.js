@@ -9,7 +9,12 @@ const PORT=process.env.PORT||3000
 connectDb()
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({
+  origin: "https://food-recipe-app-frontend-jfgh.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 
 app.use("/",require("./routes/user"))
 
