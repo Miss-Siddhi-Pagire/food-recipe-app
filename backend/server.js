@@ -10,7 +10,7 @@ connectDb()
 app.use(express.json())
 
 app.use(cors({
-  origin: "https://food-recipe-app-frontend-jfgh.onrender.com",
+  origin: "https://food-recipe-app-backend-c1mo.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
