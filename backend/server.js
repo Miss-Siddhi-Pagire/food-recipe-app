@@ -13,7 +13,11 @@ app.use(cors())
 
 app.use("/",require("./routes/user"))
 
-app.use(express.static("public"))
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 app.use("/recipe",require("./routes/recipe"))
 app.listen(PORT,(err)=>{
