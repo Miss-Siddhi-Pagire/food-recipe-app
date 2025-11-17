@@ -43,7 +43,7 @@ export default function RecipeView() {
         <div className='recipe-image'>
             {/* Use recipeData.coverImage for the image URL if it's available */}
             {recipeData.coverImage &&
-              <img src={`http://localhost:5000/images/${recipeData.coverImage}`} alt="Recipe Image" />
+              <img src={`https://food-recipe-app-backend-c1mo.onrender.com/images/${recipeData.coverImage}`} alt="Recipe Image" />
             }
             {/* Use a fallback image if no coverImage is provided */}
             {!recipeData.coverImage && <img src={foodRecipe} alt="Fallback Recipe Image" />}
